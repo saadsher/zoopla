@@ -1,0 +1,101 @@
+body {
+  color: gray;
+  font-family: Arial;
+  font-size: 1.2em;
+  font-weight: 300;
+}
+
+.wrapper {
+  display: block;
+  margin: 0 auto;
+  padding: 1em;
+}
+
+.logo {
+  display: block;
+  height: 76px;
+  width: 160px;
+}
+
+.nav {
+  display: block;
+  list-style: none;
+  padding: 0;
+}
+.nav-link {
+  display: block;
+  padding: 5px;
+}
+.nav-link a {
+  color: gray;
+  text-decoration: none;
+}
+.nav-link a:hover {
+  text-decoration: underline;
+}
+
+.sub-nav .nav {
+  background-color: white;
+  border: 1px solid gray;
+  display: block;
+  min-width: 100px;
+  padding: 5px;
+  position: absolute;
+}
+.sub-nav .nav.hidden {
+  display: none;
+}
+
+.collapsible h1 {
+  cursor: pointer;
+}
+.collapsible .row {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .2s;
+}
+.collapsible.open .row {
+  max-height: 400px;
+}
+.collapsible .remove {
+  color: red;
+  display: block;
+  font-size: 75%;
+  text-align: right;
+  text-decoration: none;
+}
+.collapsible .remove:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  padding: 15px 0;
+}
+
+.sitemap.nav {
+  display: flex;
+  font-size: 75%;
+}
+
+@media only screen and (min-width: 640px) {
+.wrapper {
+  max-width: 980px;
+}
+
+.nav {
+  display: flex;
+}
+.nav-link {
+  flex: 1;
+}
+
+.sitemap.nav {
+  width: 50%;
+}
+}
+
+@media only screen and (min-width: 980px) {
+.wrapper {
+  max-width: 1200px;
+}
+}
